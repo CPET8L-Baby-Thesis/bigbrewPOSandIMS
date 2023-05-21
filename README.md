@@ -1,8 +1,20 @@
-# bigbrewPOSandIMS
+# PROJECT NAME: Improving Efficiency and Profitability through Enhanced POS and Inventory Management of BigBrew’s Coffee Shop
+## Course: Bachelor of Engineering Technology - Major in Computer Engineering Technology
+## Section: 2G
+## Subject: Software Design - Laboratory
+## Professor: Hilda Robino
 
 ![Project Banner](/path/to/project-banner.png)
 
+## Description
 This repository contains the code and instructions for the bigbrewPOSandIMS system software. It is a pre-thesis project required for our Software Design - Laboratory (CPET8L) subject.
+
+## Team Members
+Project Manager - Joey Boy Mission
+Code and Debugging - Lemuel Del Castillo
+Design and Graphical User Interface - Christian Mark Escalo
+Documentation and Tester of the Program - Francez Kim Gorospe
+Quality Assurance and Customer Experience Tester - Mark Jay Martinez
 
 ## Table of Contents
 - [Introduction](#introduction)
