@@ -1,8 +1,9 @@
-# PROJECT NAME: Improving Efficiency and Profitability through Enhanced POS and Inventory Management of BigBrew’s Coffee Shop
-Course: Bachelor of Engineering Technology - Major in Computer Engineering Technology
-Section: 2G
-Subject: Software Design - Laboratory
-Professor: Hilda Robino
+# PROJECT NAME: Improving Efficiency and Profitability through Enhanced POS and Inventory Management of BigBrew’s Coffee Shop  
+Course: Bachelor of Engineering Technology - Major in Computer Engineering Technology  
+Section: 2G  
+Subject: Software Design - Laboratory  
+Professor: Hilda Robino  
+
 
 ![Project Banner](src/imagesIcon/bigbrewBanner%20copy.png)
 
