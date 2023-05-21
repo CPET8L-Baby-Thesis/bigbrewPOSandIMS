@@ -5,7 +5,7 @@ Subject: Software Design - Laboratory
 Professor: Hilda Robino  
 
 
-![Project Banner](src/imagesIcon/bigbrewBanner.png)
+![Project Banner](src/imagesIcon/bigbrewBanner-final.png)
 
 ## Description
 This repository contains the code and instructions for the bigbrewPOSandIMS system software. It is a pre-thesis project required for our Software Design - Laboratory (CPET8L) subject.
