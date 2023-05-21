@@ -20,8 +20,24 @@ public class BigBrew_POS {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        new userAuth();
-        new pos();
+        SwingUtilities.invokeLater(() -> {
+            //creates new sub window for the POS
+            userAuth auth = new userAuth();
+            mainPOS mainPOS = new mainPOS();
+            auth.setVisible(true);
+            
+            // Center the userAuth frame on the screen
+            Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+            int screenWidth = screenSize.width;
+            int screenHeight = screenSize.height;
+            int frameWidth = auth.getWidth();
+            int frameHeight = auth.getHeight();
+            int x = (screenWidth - frameWidth) / 2;
+            int y = (screenHeight - frameHeight) / 2;
+            auth.setLocation(x, y);
+            
+            
+        });
     }
     
 }
