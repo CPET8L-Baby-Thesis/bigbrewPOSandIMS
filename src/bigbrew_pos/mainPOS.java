@@ -6,6 +6,7 @@ package bigbrew_pos;
 
 import java.awt.Dimension;
 import java.awt.Toolkit;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -123,14 +124,20 @@ public class mainPOS extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void logoutBttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logoutBttnActionPerformed
-        // TODO add your handling code here:
-        // This is to close the mainPOS window if the user push the button
+        // Opens the Option Pane to Confirm
+        int option = JOptionPane.showConfirmDialog(this, "Are you sure you want to logout this session?", "Logout Confirmation", JOptionPane.YES_NO_OPTION);
+        
+        if (option == JOptionPane.YES_OPTION) {
+        // Perform logout operation
+        // TODO: Add your logout code here
+        
+        // This is to close the mainPOS window if the user pushes the button
         dispose();
-        // This opens the userAuth if the user is out from the session
+        
         // This opens the userAuth if the user is out from the session
         java.awt.EventQueue.invokeLater(() -> {
             userAuth auth = new userAuth();
-        
+
             // Center the userAuth frame on the screen
             Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
             int screenWidth = screenSize.width;
@@ -140,9 +147,12 @@ public class mainPOS extends javax.swing.JFrame {
             int x = (screenWidth - frameWidth) / 2;
             int y = (screenHeight - frameHeight) / 2;
             auth.setLocation(x, y);
-        
+            
             auth.setVisible(true);
         });
+        } else {
+        // User clicked Cancel, do nothing
+        }
     }//GEN-LAST:event_logoutBttnActionPerformed
 
     /**

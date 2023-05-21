@@ -4,6 +4,8 @@
  */
 package bigbrew_pos;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author JOIBOI
@@ -210,12 +212,46 @@ public class userAuth extends javax.swing.JFrame {
 
     private void loginBttnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginBttnActionPerformed
         // TODO add your handling code here:
-        // This is to close the userAuth window if the user push the button
-        dispose();
-        // This opens the mainPOS if the loginBttn is pushed as well as the credentials are correct
-        java.awt.EventQueue.invokeLater(() -> {
-            new mainPOS().setVisible(true);
-        });
+        String enteredStaffIDText = staffID.getText(); // Get the value entered in the staffID field
+
+        // Check if the enteredStaffIDText is empty or null
+        if (enteredStaffIDText.isEmpty() || enteredStaffIDText.isBlank()) {
+            // Display an error message
+            JOptionPane.showMessageDialog(this, "Please enter a valid Staff ID.", "Invalid Staff ID", JOptionPane.ERROR_MESSAGE);
+            return; // Exit the method if the staff ID is empty
+        }
+
+        // Check if the enteredStaffIDText has exactly 8 digits
+        if (enteredStaffIDText.length() != 8) {
+            // Display an error message
+            JOptionPane.showMessageDialog(this, "Please enter a valid Staff ID.", "Invalid Staff ID", JOptionPane.ERROR_MESSAGE);
+            return; // Exit the method if the staff ID does not have 8 digits
+        }
+
+        int enteredStaffID;
+        try {
+            enteredStaffID = Integer.parseInt(enteredStaffIDText);
+        } catch (NumberFormatException e) {
+            // Display an error message if the entered value is not a valid integer
+            JOptionPane.showMessageDialog(this, "Please enter a valid Staff ID.", "Invalid Staff ID", JOptionPane.ERROR_MESSAGE);
+            return; // Exit the method if the staff ID is not a valid integer
+        }
+
+        // Perform staff ID validation
+        if (enteredStaffID == 00000000) {
+            // Close the userAuth window if the user clicks the button
+            dispose();
+
+            // Open the mainPOS if the loginBttn is clicked and the credentials are correct
+            java.awt.EventQueue.invokeLater(() -> {
+                mainPOS mainPos = new mainPOS();
+                mainPos.setLocationRelativeTo(null); // Center the mainPOS frame
+                mainPos.setVisible(true);
+            });
+        } else {
+            // Display an error message
+            JOptionPane.showMessageDialog(this, "The staff ID is not correct. Please try again.", "Invalid Staff ID", JOptionPane.ERROR_MESSAGE);
+        }
     }//GEN-LAST:event_loginBttnActionPerformed
 
     /**
@@ -246,10 +282,8 @@ public class userAuth extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new userAuth().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new userAuth().setVisible(true);
         });
     }
 
@@ -266,4 +300,8 @@ public class userAuth extends javax.swing.JFrame {
     private javax.swing.JPanel topBorder;
     private java.awt.Label wlcLbl;
     // End of variables declaration//GEN-END:variables
+
+    private boolean isStaffIDValid(String staffIdentification) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
