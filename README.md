@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-# bigbrewPOSandIMS
-This is a pre-thesis required for our subject Software Design - Laboratory (CPET8L). This contains the codes and instructions to make the system software
-=======
-<<<<<<< HEAD
-# bigbrewPOSandIMS
-This is a pre-thesis required for our subject Software Design - Laboratory (CPET8L). This contains the codes and instructions to make the system software
-=======
 # PROJECT NAME: Improving Efficiency and Profitability through Enhanced POS and Inventory Management of BigBrew’s Coffee Shop  
 Course: Bachelor of Engineering Technology - Major in Computer Engineering Technology  
 Section: 2G  
