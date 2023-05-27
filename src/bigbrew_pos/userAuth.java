@@ -17,6 +17,9 @@ public class userAuth extends javax.swing.JFrame {
      */
     public userAuth() {
         initComponents();
+        this.getContentPane().setBackground(new java.awt.Color(240, 215, 188)); // This override the backgound to the standard color
+        greetText.setOpaque(false); // This set the greetText panel to tranparent
+
     }
 
     /**
@@ -127,7 +130,7 @@ public class userAuth extends javax.swing.JFrame {
         loginFormLayout.setVerticalGroup(
             loginFormLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(loginFormLayout.createSequentialGroup()
-                .addGap(100, 100, 100)
+                .addGap(88, 88, 88)
                 .addComponent(accLbl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(12, 12, 12)
                 .addComponent(staffID, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -139,10 +142,12 @@ public class userAuth extends javax.swing.JFrame {
         );
 
         wlcLbl.setAlignment(java.awt.Label.CENTER);
+        wlcLbl.setBackground(new java.awt.Color(240, 215, 188));
         wlcLbl.setFont(new java.awt.Font("Roboto", 0, 12)); // NOI18N
         wlcLbl.setText("Welcome to");
 
         bbShopLbl.setAlignment(java.awt.Label.CENTER);
+        bbShopLbl.setBackground(new java.awt.Color(240, 215, 188));
         bbShopLbl.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
         bbShopLbl.setText("BigBrew Coffee Shop!");
 
@@ -153,7 +158,7 @@ public class userAuth extends javax.swing.JFrame {
             .addGroup(greetTextLayout.createSequentialGroup()
                 .addGroup(greetTextLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(greetTextLayout.createSequentialGroup()
-                        .addGap(79, 79, 79)
+                        .addGap(73, 73, 73)
                         .addComponent(wlcLbl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(greetTextLayout.createSequentialGroup()
                         .addContainerGap()

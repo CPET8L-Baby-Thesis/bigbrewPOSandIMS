@@ -19,6 +19,7 @@ public class mainPOS extends javax.swing.JFrame {
      */
     public mainPOS() {
         initComponents();
+        this.getContentPane().setBackground(new java.awt.Color(240, 215, 188));
     }
 
     /**
@@ -30,27 +31,20 @@ public class mainPOS extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        mainPanelPOS = new javax.swing.JPanel();
         maintopBorder = new javax.swing.JPanel();
         logoutBttn = new javax.swing.JButton();
         topTitle = new javax.swing.JLabel();
         mainbottomBorder = new javax.swing.JPanel();
+        jTabbedPane1 = new javax.swing.JTabbedPane();
+        posMain = new javax.swing.JPanel();
+        imsMain = new javax.swing.JPanel();
+        cusMain = new javax.swing.JPanel();
+        repMain = new javax.swing.JPanel();
+        admMain = new javax.swing.JPanel();
+        settMain = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Point of Sale - BigBrew Coffee Shop");
-
-        mainPanelPOS.setBackground(new java.awt.Color(240, 215, 188));
-
-        javax.swing.GroupLayout mainPanelPOSLayout = new javax.swing.GroupLayout(mainPanelPOS);
-        mainPanelPOS.setLayout(mainPanelPOSLayout);
-        mainPanelPOSLayout.setHorizontalGroup(
-            mainPanelPOSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1292, Short.MAX_VALUE)
-        );
-        mainPanelPOSLayout.setVerticalGroup(
-            mainPanelPOSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 746, Short.MAX_VALUE)
-        );
 
         maintopBorder.setBackground(new java.awt.Color(187, 111, 27));
 
@@ -82,11 +76,11 @@ public class mainPOS extends javax.swing.JFrame {
         maintopBorderLayout.setVerticalGroup(
             maintopBorderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, maintopBorderLayout.createSequentialGroup()
-                .addContainerGap(22, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(maintopBorderLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(topTitle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(logoutBttn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         mainbottomBorder.setBackground(new java.awt.Color(25, 25, 25));
@@ -102,20 +96,101 @@ public class mainPOS extends javax.swing.JFrame {
             .addGap(0, 35, Short.MAX_VALUE)
         );
 
+        jTabbedPane1.setTabPlacement(javax.swing.JTabbedPane.LEFT);
+        jTabbedPane1.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+
+        javax.swing.GroupLayout posMainLayout = new javax.swing.GroupLayout(posMain);
+        posMain.setLayout(posMainLayout);
+        posMainLayout.setHorizontalGroup(
+            posMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1150, Short.MAX_VALUE)
+        );
+        posMainLayout.setVerticalGroup(
+            posMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 678, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("", new javax.swing.ImageIcon(getClass().getResource("/imagesIcon/wallet_detailed.png")), posMain); // NOI18N
+
+        javax.swing.GroupLayout imsMainLayout = new javax.swing.GroupLayout(imsMain);
+        imsMain.setLayout(imsMainLayout);
+        imsMainLayout.setHorizontalGroup(
+            imsMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1150, Short.MAX_VALUE)
+        );
+        imsMainLayout.setVerticalGroup(
+            imsMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 678, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab2", imsMain);
+
+        javax.swing.GroupLayout cusMainLayout = new javax.swing.GroupLayout(cusMain);
+        cusMain.setLayout(cusMainLayout);
+        cusMainLayout.setHorizontalGroup(
+            cusMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1150, Short.MAX_VALUE)
+        );
+        cusMainLayout.setVerticalGroup(
+            cusMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 678, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab3", cusMain);
+
+        javax.swing.GroupLayout repMainLayout = new javax.swing.GroupLayout(repMain);
+        repMain.setLayout(repMainLayout);
+        repMainLayout.setHorizontalGroup(
+            repMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1150, Short.MAX_VALUE)
+        );
+        repMainLayout.setVerticalGroup(
+            repMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 678, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab4", repMain);
+
+        javax.swing.GroupLayout admMainLayout = new javax.swing.GroupLayout(admMain);
+        admMain.setLayout(admMainLayout);
+        admMainLayout.setHorizontalGroup(
+            admMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1150, Short.MAX_VALUE)
+        );
+        admMainLayout.setVerticalGroup(
+            admMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 678, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab5", admMain);
+
+        javax.swing.GroupLayout settMainLayout = new javax.swing.GroupLayout(settMain);
+        settMain.setLayout(settMainLayout);
+        settMainLayout.setHorizontalGroup(
+            settMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1150, Short.MAX_VALUE)
+        );
+        settMainLayout.setVerticalGroup(
+            settMainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 678, Short.MAX_VALUE)
+        );
+
+        jTabbedPane1.addTab("tab6", settMain);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(maintopBorder, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(mainbottomBorder, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(mainPanelPOS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jTabbedPane1)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(maintopBorder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(mainPanelPOS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 678, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(mainbottomBorder, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -191,10 +266,16 @@ public class mainPOS extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel admMain;
+    private javax.swing.JPanel cusMain;
+    private javax.swing.JPanel imsMain;
+    private javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JButton logoutBttn;
-    private javax.swing.JPanel mainPanelPOS;
     private javax.swing.JPanel mainbottomBorder;
     private javax.swing.JPanel maintopBorder;
+    private javax.swing.JPanel posMain;
+    private javax.swing.JPanel repMain;
+    private javax.swing.JPanel settMain;
     private javax.swing.JLabel topTitle;
     // End of variables declaration//GEN-END:variables
 }
