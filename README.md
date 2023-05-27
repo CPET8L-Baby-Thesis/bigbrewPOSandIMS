@@ -43,5 +43,3 @@ Encourage contributions from the open-source community by providing guidelines f
 
 ## License
 State the license under which your project is distributed. Include any relevant disclaimers or copyright notices.
->>>>>>> parent of 08ed180 (Update README.md)
->>>>>>> parent of b8bf7e5 (Update README.md)
